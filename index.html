@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Share Modal</title>
+  <link rel="shortcut icon" href="./circle profile pic.png" type="image/x-icon">
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <div class="circle1"></div>
+  <div class="circle2"></div>
+
+  <div class="wrapper">
+    <div class="card-wrapper">
+      <div>
+        <img src="./circle profile pic.png" alt="user" />
+      </div>
+      <div class="user-name">
+        <h2>Shahnawaz Alam</h2>
+      </div>
+      <div class="designation">
+        <h3>Web Developer</h3>
+      </div>
+      <div class="bottom-group">
+        <button onclick="openModal()" class="btn-share btn-card">
+          <i class="fa-solid fa-share"></i>
+          <div>share my profile</div>
+        </button>
+
+        <a href="https://www.linkedin.com/in/alam-shahnawaz/" target="_blank">
+          <button class="btn-follow btn-card">Follow me</button>
+
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="modal">
+    <div class="modal-header">
+      <h1>Share My Profile</h1>
+      <div>
+        <i onclick="closeModal()" class="fa-solid fa-xmark close"></i>
+      </div>
+    </div>
+    <div>
+
+      <h3>Share this via</h3>
+      <div class="icon-container">
+        <a href="https://www.linkedin.com/in/alam-shahnawaz/" class="icon" id="linkedin" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://t.me/ShahnawazAlamm" class="icon" id="telegram" target="_blank">
+          <i class="fa-brands fa-telegram"></i>
+        </a>
+        <a href="https://github.com/shahnawazAlam3641" class="icon" id="github">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://discordapp.com/users/1143496018323841144" class="icon" id="discord" target="_blank">
+          <i class="fa-brands fa-discord"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="overlay" onclick="closeModal()"></div>
+
+  <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
